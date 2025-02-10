@@ -1,0 +1,14 @@
+training:
+  batch_size: 128  # Reduced batch size for better stability
+  num_epochs: 10   # Quick test with fewer epochs
+  eval_interval: 2   # More frequent evaluation
+  experiment_name: "offline_rl_training_test"
+  
+model:
+  state_dim: 3  # Will be overridden by data
+  action_dim: 1  # Will be overridden by data
+  hidden_dims: [512, 512]  # Increased network capacity
+  learning_rate: 0.00005  # Further reduced learning rate
+  tau: 0.0005   # Even slower target network updates
+  discount: 0.995  # Slightly increased discount factor
+  cql_alpha: 5.0  # Reduced CQL regularization to prevent over-conservatism
