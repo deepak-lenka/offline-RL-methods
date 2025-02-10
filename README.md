@@ -123,7 +123,3 @@ Note: These results are from a model trained for only 10 epochs. Performance can
 - Tuning hyperparameters
 - Collecting more training data
 - Experimenting with different network architectures
-
-## License
-
-MIT License
